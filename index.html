@@ -13,82 +13,72 @@
     <link rel="stylesheet" href="style.css" />
     <title>Registration form</title>
   </head>
-  <body class="bg-pry-red font-poppings text-white">
-    <main class="container grid px-6 pt-16 lg:grid-cols-2 lg:gap-14 lg:px-24">
-      <section class="mb-6 lg:flex lg:flex-col lg:justify-center">
-        <h1 class="mb-4 text-center text-3xl font-bold">
-          Learn to code by watching others
-        </h1>
-        <p class="mb-10 text-center">
+  <body>
+    <main class="container">
+      <img src="./images/bg-intro-mobile.png" alt="" class="mobile__bg" />
+      <img src="./images/bg-intro-desktop.png" alt="" class="desktop__bg" />
+      <section class="container__header">
+        <h1>Learn to code by watching others</h1>
+        <p class="header__copy">
           See how experienced developers solve problems in real-time. Watching
           scripted tutorials is great, but understanding how developers think is
           invaluable.
         </p>
       </section>
       <article>
-        <h2
-          class="bg-accent-blue mx-auto mb-6 max-w-sm rounded-lg py-5 px-5 text-center shadow-xl lg:max-w-none"
-        >
-          <span class="font-bold"> Try it free 7 days </span>
-          then <br />
-          $20/mo. thereafter
+        <h2>
+          <span> Try it free 7 days </span>
+          then $20/mo. thereafter
         </h2>
-        <article
-          class="mx-auto mb-24 max-w-sm rounded-lg bg-white p-6 pb-8 shadow-xl lg:mx-0 lg:max-w-none"
-        >
+        <article class="form__container">
           <!-- The form starts -->
-          <form class="mx-auto w-11/12" id="form-container">
+          <form id="form-container">
             <!-- Single form and Error Icon -->
-            <div class="input-container">
+            <div class="input__container">
               <input type="text" placeholder="First Name" id="first-name" />
               <img
                 src="./images/icon-error.svg"
-                class="error-icon hidden"
+                class="error__icon hidden"
                 alt=""
               />
-              <p class="error-msg hidden">First Name cannot be empty</p>
+              <p class="error__msg hidden">First Name cannot be empty</p>
             </div>
-            <div class="input-container">
+            <div class="input__container">
               <input type="text" placeholder="Last Name" id="last-name" />
               <img
                 src="./images/icon-error.svg"
-                class="error-icon hidden"
+                class="error__icon hidden"
                 alt=""
               />
-              <p class="error-msg hidden">Last Name cannot be empty</p>
+              <p class="error__msg hidden">Last Name cannot be empty</p>
             </div>
-            <div class="input-container">
-              <input
-                type="text"
-                placeholder="Email Address"
-                id="email"
-                class="email"
-              />
+            <div class="input__container">
+              <input type="text" placeholder="Email Address" id="email" />
               <img
                 src="./images/icon-error.svg"
-                class="error-icon hidden"
+                class="error__icon hidden"
                 alt=""
               />
-              <p class="error-msg hidden">Looks like this is not an email</p>
+              <p class="error__msg hidden">Looks like this is not an email</p>
             </div>
-            <div class="input-container">
+            <div class="input__container">
               <input type="password" placeholder="password" id="password" />
               <img
                 src="./images/icon-error.svg"
-                class="error-icon hidden"
+                class="error__icon hidden"
                 alt=""
               />
-              <p class="error-msg hidden">password cannot be empty</p>
+              <p class="error__msg hidden">password cannot be empty</p>
             </div>
             <h3>
-              <button type="submit" class="submit-btn">
+              <button type="submit" class="submit__btn">
                 CLAIM YOUR FREE TRIAL
               </button>
             </h3>
           </form>
-          <p class="text-neutral-grayish-blue mt-2 text-center text-sm">
+          <p class="form__info">
             By clicking the button, you are agreeing to our
-            <span class="text-pry-red font-bold"> Terms and Services </span>
+            <span> Terms and Services </span>
           </p>
         </article>
       </article>

@@ -9,10 +9,12 @@ function displayError(e) {
     const errLogo = input.nextElementSibling;
     const errPara = errLogo.nextElementSibling;
     if (input.value.length === 0) {
+      input.classList.add("error");
       errLogo.classList.remove("hidden");
       errPara.classList.remove("hidden");
     }
     if (input.value.length > 0) {
+      input.classList.remove("error");
       errLogo.classList.add("hidden");
       errPara.classList.add("hidden");
     }
